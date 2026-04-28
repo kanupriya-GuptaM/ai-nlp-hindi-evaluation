@@ -1,0 +1,106 @@
+# 📘 Idiom Errors Analysis
+
+## 📌 Overview
+
+This section highlights errors where the model fails to correctly interpret and translate idiomatic expressions. These errors typically occur when the model performs literal translation instead of capturing the intended meaning.
+
+---
+
+## 🔍 Example 1
+
+**English:** He kicked the bucket
+**Model Output:** उसने बाल्टी को लात मारी
+
+* **Fluency:** ✔️ Correct
+* **Adequacy:** ❌ Incorrect
+
+### ❗ Issue
+
+The model performs a literal translation of the idiom, resulting in a grammatically correct but semantically incorrect sentence.
+
+### ✅ Correct Translation
+
+* वह मर गया
+* उसका निधन हो गया
+
+### 🧠 Explanation
+
+“Kicked the bucket” is an idiom meaning “to die.” The model fails to recognize this and instead translates word-by-word.
+
+### 🏷 Error Type
+
+* Idiom Translation Error
+* Semantic Error
+* Literal Translation Error
+
+---
+
+## 🔍 Example 2
+
+**English:** Let’s call it a day
+**Model Output:** आओ दिन को बुलाते हैं
+
+* **Fluency:** ❌ Incorrect
+* **Adequacy:** ❌ Incorrect
+
+### ❗ Issue
+
+The model completely fails to interpret the idiomatic meaning and produces an unnatural and incorrect sentence.
+
+### ✅ Correct Translation
+
+* आज के लिए यहीं समाप्त करते हैं
+* अब आज का काम यहीं खत्म करते हैं
+
+### 🧠 Explanation
+
+The phrase means to stop working for the day, not to literally “call the day.”
+
+### 🏷 Error Type
+
+* Idiom Error
+* Fluency Error
+* Semantic Error
+
+---
+
+## 🔍 Example 3
+
+**English:** Stop beating around the bush
+**Model Output:** झाड़ी के आसपास मारना बंद करो
+
+* **Fluency:** ❌ Incorrect
+* **Adequacy:** ❌ Incorrect
+
+### ❗ Issue
+
+The model translates the idiom literally, resulting in a nonsensical sentence in Hindi.
+
+### ✅ Correct Translation
+
+* घुमा-फिराकर बात करना बंद करो
+* सीधे मुद्दे पर आओ
+
+### 🧠 Explanation
+
+The idiom means to avoid the main point, but the model fails to capture this meaning.
+
+### 🏷 Error Type
+
+* Idiom Error
+* Pragmatic Error
+* Literal Translation Error
+
+---
+
+## 📊 Key Pattern
+
+* The model handles literal sentences well but fails on idiomatic expressions
+* Idioms require **contextual and cultural understanding**, not direct translation
+
+---
+
+## 🎯 Insight
+
+👉
+**Idiom errors occur due to lack of exposure to non-literal language and over-reliance on word-to-word translation.**
