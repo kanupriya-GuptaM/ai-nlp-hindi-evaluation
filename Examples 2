@@ -1,0 +1,59 @@
+# 📘 Pragmatic & Hedging Error Example
+
+## 🔍 Example
+
+**English:** I wouldn’t say it’s cheap
+**Model Output:** मैं कहूंगा कि यह सस्ता नहीं है
+
+---
+
+## ✅ Evaluation
+
+* **Fluency:** ✔️ Correct
+* **Adequacy:** ⚠️ Partial
+
+---
+
+## ❗ Issue
+
+The model output is grammatically correct but fails to preserve the **hedging and indirect tone** of the original sentence.
+
+---
+
+## 🧠 Explanation
+
+The phrase **“I wouldn’t say”** expresses:
+
+* hesitation
+* indirect opinion
+* softened judgment
+
+However, the model translates it as:
+👉 “मैं कहूंगा” (I will say)
+
+This introduces:
+
+* **false certainty**
+* **stronger tone than intended**
+
+---
+
+## 🏷 Error Type
+
+* Pragmatic Error
+* Hedging / Tone Loss
+* Modality Shift (would → will)
+
+---
+
+## ✅ Better Translations
+
+* मैं यह नहीं कहूँगा कि यह सस्ता है
+* मैं इसे सस्ता नहीं कहूँगा
+
+---
+
+## 🎯 Key Insight
+
+👉
+**The model preserves surface meaning but fails to capture speaker intent and tone, leading to overstatement.**
