@@ -1,0 +1,16 @@
+English,Model_Output,Error_Type,Fluency,Adequacy,Notes
+He kicked the bucket,उसने बाल्टी को लात मारी,Idiom Error,Correct,Incorrect,Literal translation of idiom (should mean died)
+That’s not bad,यह बुरा नहीं है,Pragmatic Error,Correct,Partial,Missing positive implication (means somewhat good)
+I guess it’s fine,मुझे लगता है यह ठीक है,Hedging Error,Correct,Partial,Uncertainty/hesitation is reduced
+He is kind of rude,वह अशिष्ट है,Pragmatic Error,Correct,Partial,Soft tone lost (kind of missing)
+She barely passed the exam,उसने मुश्किल से परीक्षा पास की,None,Correct,Correct,Good translation
+Result is not bad,परिणाम बुरा नहीं है,Pragmatic Error,Correct,Partial,Neutral vs slightly positive nuance lost
+He didn’t help much,उसने ज्यादा मदद नहीं की,None,Correct,Correct,Acceptable translation
+I wouldn’t say it’s cheap,मैं कहूंगा कि यह सस्ता नहीं है,Hedging Error,Correct,Partial,Wouldn’t say → wrong certainty
+It’s not like he didn’t try,ऐसा नहीं है कि उसने कोशिश नहीं की,None,Correct,Correct,Correct double negation handling
+She is very particular,वह बहुत खास है,WSD Error,Correct,Incorrect,Particular misinterpreted as special instead of choosy
+Let’s call it a day,आओ दिन को बुलाते हैं,Idiom Error,Incorrect,Incorrect,Completely wrong idiomatic meaning
+He is cold,वह ठंडा है,WSD Error,Correct,Partial,Could mean emotionless, not temperature
+Stop beating around the bush,झाड़ी के आसपास मारना बंद करो,Idiom Error,Incorrect,Incorrect,Literal idiom translation
+This is quite interesting,यह काफी दिलचस्प है,None,Correct,Correct,Good translation
+She didn’t really like it,उसे यह पसंद नहीं आया,Pragmatic Error,Correct,Partial,Soft dislike becomes strong dislike
