@@ -1,0 +1,140 @@
+# 📊 Error Analysis & Insights
+
+## 📌 Overview
+
+This analysis is based on a sample dataset of AI-generated Hindi translations. The goal is to identify common error patterns and understand why the model fails in certain linguistic scenarios.
+
+---
+
+## 📊 Error Distribution
+
+| Error Type      | Count | Percentage |
+| --------------- | ----- | ---------- |
+| Pragmatic Error | 4     | 26.6%      |
+| Idiom Error     | 3     | 20%        |
+| Hedging Error   | 2     | 13.3%      |
+| WSD Error       | 2     | 13.3%      |
+| No Error        | 4     | 26.6%      |
+
+---
+
+## 🔍 Key Observations
+
+### 1. High Pragmatic Errors (26.6%)
+
+* The model frequently fails to capture **tone, intent, and indirect meaning**
+* Examples:
+
+  * “That’s not bad” → Neutral instead of slightly positive
+  * “She didn’t really like it” → Strong negative instead of soft dislike
+
+👉 Insight:
+The model struggles with **implicit meaning and conversational nuance**
+
+---
+
+### 2. Idiom Handling Issues (20%)
+
+* Idiomatic expressions are often translated **literally**
+* Examples:
+
+  * “He kicked the bucket” → Literal instead of “died”
+  * “Let’s call it a day” → Completely incorrect
+
+👉 Insight:
+The model lacks understanding of **non-literal language**
+
+---
+
+### 3. Hedging & Tone Loss (13.3%)
+
+* Soft expressions become **more direct or certain**
+* Examples:
+
+  * “I guess it’s fine” → Reduced uncertainty
+  * “I wouldn’t say it’s cheap” → Increased certainty
+
+👉 Insight:
+The model struggles with **uncertainty and speaker intent**
+
+---
+
+### 4. Word Sense Disambiguation (WSD) Errors (13.3%)
+
+* Words with multiple meanings are incorrectly interpreted
+* Examples:
+
+  * “Particular” → translated as “खास” instead of “चूजी”
+  * “Cold” → interpreted only as temperature
+
+👉 Insight:
+The model fails in **context-based meaning selection**
+
+---
+
+## 🧠 Root Cause Analysis
+
+* Training data is biased toward **literal and formal language**
+* Limited exposure to:
+
+  * idiomatic expressions
+  * conversational Hindi
+  * tone and intent variations
+* Over-reliance on **word-to-word translation patterns**
+* Lack of **pragmatic and contextual understanding**
+
+---
+
+## 🚀 Recommendations for Improvement
+
+### 1. Data Enhancement
+
+* Add datasets with:
+
+  * idioms and expressions
+  * conversational and informal Hindi
+  * tone variations (polite, sarcastic, neutral)
+
+---
+
+### 2. Annotation Strategy
+
+* Label data with:
+
+  * intent (suggestion, criticism, humor)
+  * tone (soft, strong, neutral)
+  * meaning category (literal vs non-literal)
+
+---
+
+### 3. Evaluation Framework
+
+* Create targeted benchmarks for:
+
+  * idioms
+  * hedging
+  * negation
+  * WSD
+
+---
+
+### 4. Human-in-the-Loop
+
+* Use linguists to:
+
+  * validate outputs
+  * correct edge cases
+  * provide feedback for retraining
+
+---
+
+## 📌 Final Conclusion
+
+The model performs well on grammatically straightforward and literal translations but struggles with **contextual, idiomatic, and pragmatic language**. Improving performance requires better data diversity, structured evaluation, and human feedback integration.
+
+---
+
+## 🎯 Key Takeaway
+
+👉
+**The primary limitation is not fluency, but understanding of meaning, intent, and context.**
