@@ -1,5 +1,5 @@
 
-# AI + NLP Evaluation for Hindi Language (Linguistic Error Analysis)
+#AI NLP Evaluation for Hindi: Error Analysis & Model Improvement
 
 ## 📌 Project Overview
 
